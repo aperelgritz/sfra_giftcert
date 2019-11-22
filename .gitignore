@@ -1,0 +1,11 @@
+node_modules/
+coverage/
+/.vscode
+npm-debug.log
+cartridges.zip
+.idea/
+dw.json
+.DS_Store
+tmp/
+test/integration/config.json
+test/acceptance/report
