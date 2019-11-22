@@ -19,6 +19,10 @@ This plugin enhances the app_storefront_base cartridge by providing gift certifi
   * Adding a product to basket will remove any gift certificate already there
 * Cannot add to basket more than 1 gift certificate
 
+## Demonstration
+
+Recorded demonstration:[Demo Video](https://org62.my.salesforce.com/sfc/p/000000000062/a/0M000000O8U5/pTdgqFRPktlWLc5Owa53sG7P.5dU1GKcJN6kfAEg80k)
+
 ## Requirements
 
 Tested with app_storefront_base version 4.2.1
