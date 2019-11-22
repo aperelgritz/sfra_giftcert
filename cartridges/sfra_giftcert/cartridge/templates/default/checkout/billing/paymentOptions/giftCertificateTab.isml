@@ -1,0 +1,10 @@
+<li class="nav-item" data-method-id="${paymentOption.ID}">
+    <a class="nav-link gift-certificate-tab" data-toggle="tab" href="#gift-certificate-content" role="tab">
+        <img class="credit-card-option"
+                src="${URLUtils.staticURL('/images/gift-certificate-tab-logo.png')}"
+                height="32"
+                alt="${paymentOption.name}"
+                title="${paymentOption.name}"
+        >
+    </a>
+</li>

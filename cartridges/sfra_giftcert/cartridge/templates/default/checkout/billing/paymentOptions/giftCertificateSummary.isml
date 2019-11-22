@@ -1,0 +1,6 @@
+<div class="credit-card-type">
+    <span>${Resource.msg('label.giftcertificate.header', 'giftCertificate', null)}</span>
+</div>
+<div class="credit-card-number">
+    ${payment.maskedGiftCertificateCode}
+</div>

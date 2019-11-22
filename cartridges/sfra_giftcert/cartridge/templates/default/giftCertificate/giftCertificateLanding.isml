@@ -1,0 +1,25 @@
+<isdecorate template="common/layout/page">
+    <isscript>
+        var assets = require('*/cartridge/scripts/assets.js');
+        assets.addJs('/js/giftCert.js');
+    </isscript>
+
+    <div class="hero slant-down">
+        <h1 class="page-title">${Resource.msg('page.title.checkandorder.giftcertificate','giftCertificate',null)}</h1>
+    </div>
+
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-sm-8 col-md-6">
+                <div class="card">
+                    <isinclude template="giftCertificate/components/getGiftCertificate" />
+                </div>
+            </div>
+            <div class="col-sm-8 col-md-6">
+                <div class="card">
+                    <isinclude template="giftCertificate/components/buyGiftCertificate" />
+                </div>
+            </div>
+        </div>
+    </div>
+</isdecorate>

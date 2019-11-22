@@ -1,0 +1,36 @@
+<body>
+	<div style="font-family: Verdana, Geneva, Arial, Helvetica, sans-serif; font-size: x-small; color: Black;">
+		<isif condition="${empty(pdict.giftCert.recipientName)}">
+			Dear Valued Customer,
+		<iselse>
+			Dear&nbsp;<isprint value="${pdict.giftCert.recipientName}">,
+		</isif>
+		<br/>
+		<br/>
+			A Gift Certificate has been issued to you in the amount of <isprint value="${pdict.giftCert.price.currencyCode}"> <isprint value="${pdict.giftCert.price.decimalValue}">.
+		<br/>
+		<br/>
+		<isif condition="${!empty(pdict.giftCert.message)}">
+			Message:
+			<br/>
+			<br/>
+			<isprint value="${pdict.giftCert.message}">
+			<br/>
+			<br/>
+		</isif>
+		You can redeem your gift certificate at <a href="${SHOP_URL}">our online store</a>.
+		<br/>
+		<br/>
+		Your gift certificate code is <b><isprint value="${pdict.giftCertCode}"></b>.
+		<br/>
+		<br/>
+		Sincerely, 
+		<br/>
+		<br/>
+		<isif condition="${empty(pdict.GiftCertificateSenderName)}">
+			Customer Support
+		<iselse>
+			<isprint value="${pdict.GiftCertificateSenderName}">
+		</isif>
+	</div>
+</body>

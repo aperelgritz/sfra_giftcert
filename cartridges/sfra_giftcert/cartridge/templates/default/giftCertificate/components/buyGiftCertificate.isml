@@ -1,0 +1,28 @@
+<h2 class="card-header">${Resource.msg('label.buy.giftcertificate','giftCertificate',null)}</h2>
+
+<div class="card-body">
+    <p class="track-order-header-text">${Resource.msg('label.enter.giftcertificate.recipient.details','giftCertificate',null)}</p>
+
+    <div class="form-group required">
+        <label class="form-control-label" for="giftcertificate-recipient">${Resource.msg('label.giftcertificate.recipient','giftCertificate',null)}</label>
+        <input type="text" id="giftcertificate-recipient" class="form-control" name="giftCertTo" placeholder="${Resource.msg('placeholder.giftcertificate.recipient','giftCertificate',null)}" required>
+        <div class="invalid-feedback"></div>
+    </div>
+    <div class="form-group required">
+        <label class="form-control-label" for="giftcertificate-email">${Resource.msg('label.giftcertificate.email','giftCertificate',null)}</label>
+        <input type="email" id="giftcertificate-email" class="form-control" name="giftCertEmail" placeholder="${Resource.msg('placeholder.giftcertificate.email','giftCertificate',null)}" required>
+        <div class="invalid-feedback"></div>
+    </div>
+    <div class="form-group required">
+        <label class="form-control-label" for="giftcertificate-amount">${Resource.msg('label.giftcertificate.amount','giftCertificate',null)}</label>
+        <input type="number" id="giftcertificate-amount" class="form-control" name="giftCertAmount" min="1" max="1000" placeholder="${Resource.msg('placeholder.giftcertificate.amount','giftCertificate',null)}" required>
+        <div class="invalid-feedback"></div>
+    </div>
+    <div class="form-group">
+        <label class="form-control-label" for="giftcertificate-message">${Resource.msg('label.giftcertificate.message','giftCertificate',null)}</label>
+        <textarea class="form-control" id="giftcertificate-message" rows="3" cols="60" maxlength="200" name="giftCertMessage" placeholder="${Resource.msg('placeholder.giftcertificate.message','giftCertificate',null)}"></textarea>
+        <div class="invalid-feedback"></div>
+    </div>
+    <input type="hidden" class="add-giftcert-to-cart-url" value="${URLUtils.url('Cart-AddGiftCert')}">
+    <button class="btn btn-block btn-primary add-giftcert-to-cart">${Resource.msg('button.add.giftcertificate.to.cart','giftCertificate',null)}</button>
+</div>

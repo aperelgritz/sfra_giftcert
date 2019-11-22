@@ -1,0 +1,45 @@
+<div class="gift-certificate-content" id="gift-certificate-content">
+    <fieldset class="payment-form-fields">
+
+        <!--- payment method is gift certificate --->
+        <input type="hidden" class="form-control"
+               name="${pdict.forms.billingForm.paymentMethod.htmlName}"
+               value="GIFT_CERTIFICATE"
+        >
+
+        <h2 class="card-header">${Resource.msg('label.check.giftcertificate.balance','giftCertificate',null)}</h2>
+
+        <div class="card-body">
+
+            <p class="track-order-header-text">${Resource.msg('label.enter.giftcertificate.code','giftCertificate',null)}</p>
+
+            <div class="form-group required">
+                <label class="form-control-label" for="giftcert-code">${Resource.msg('label.certificatecode','giftCertificate',null)}</label>
+                <input
+                    type="text"
+                    required
+                    class="form-control giftcert-input-field"
+                    aria-describedby="form-number-error"
+                    id="giftcert-code"
+                    name="giftCertCode"
+                    placeholder="AAAABBBBCCCCDDDD"
+                    data-gift-cert-add="${URLUtils.url('GiftCertificate-Add')}" />
+                <div class="invalid-feedback" id="form-number-error"></div>
+                <div class="coupon-error">
+                    <span class="coupon-missing-error" id="missingGiftCertCode" role="alert" style="display:none">${Resource.msg('error.code.missing', 'giftCertificate', null)}</span>
+                    <span class="coupon-error-message" id="invalidCouponCode" role="alert" style="display:none">${Resource.msg('error.not.found', 'giftCertificate', null)}</span>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <button class="btn btn-block btn-primary giftcertcode-button" type="submit" name="submit" value="submit">${Resource.msg('button.submit','giftCertificate',null)}</button>
+            </div>
+
+            <div class="summary-section-label">
+                <span class="giftcert-message"></span>
+            </div>
+
+        </div>
+
+    </fieldset>
+</div>

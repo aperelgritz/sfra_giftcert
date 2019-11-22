@@ -1,0 +1,52 @@
+<div class="product-line-item" data-product-line-item="${lineItem.UUID}">
+    <div class="line-item-header">
+        <isif condition=${miniCart}>
+            <div class="line-item-name">
+                <span>${lineItem.productName}</span>
+            </div>
+            <div class="remove-line-item">
+                <button type="button" class="remove-btn remove-product btn btn-light" data-toggle="modal"
+                        data-target="#removeProductModal" data-pid="${lineItem.id}"
+                        data-name="${lineItem.productName}"
+                        data-action="${pdict.actionUrls.removeGiftCertLineItemUrl}"
+                        data-uuid="${lineItem.UUID}"
+                        aria-label="${Resource.msgf('text.remove.giftcert.line.item','giftCertificate', null)}">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+        <iselse/>
+            <div class="line-item-name">
+                <span>${lineItem.productName}</span>
+            </div>
+        </isif>
+    </div>
+
+
+    <div class="product-line-item-details d-flex flex-row">
+        <div class="item-image">
+            <img class="product-image"
+                src="${lineItem.images.small[0].url}"
+                alt="${lineItem.images.small[0].alt}"
+                title="${lineItem.images.small[0].title}">
+        </div>
+        <div class="item-attributes">
+            <p class="line-item-attributes"><span class="font-weight-bold">${Resource.msg('label.giftcertificate.to','giftCertificate',null)}</span> ${lineItem.recipient}</p>
+            <p class="line-item-attributes"><span class="font-weight-bold">${Resource.msg('label.giftcertificate.email','giftCertificate',null)}</span> ${lineItem.recipientEmail}</p>
+            <p class="line-item-attributes"><span class="font-weight-bold">${Resource.msg('label.giftcertificate.message','giftCertificate',null)}</span> ${lineItem.message}</p>
+        </div>
+    </div>
+
+
+    <div><hr class="line-item-divider"></div>
+    <div class="row align-items-start">
+        <!--- line item total price --->
+        <div class="col-4 line-item-total-price justify-content-end">
+            <p class="line-item-price-info">
+                ${Resource.msg('label.total.price','cart',null)}
+            </p>
+            <div class="item-total-${lineItem.UUID} price">
+                <div class="pricing line-item-total-price-amount item-total-${lineItem.UUID}">${lineItem.amount}</div>
+            </div>
+        </div>
+    </div>
+</div>
