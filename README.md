@@ -7,7 +7,7 @@ It is not intended to be used in a production environment as is.
 ## Capabilities
 
 This plugin enhances the app_storefront_base cartridge by providing gift certificate functionality, including the following capabilities:
-* Buy a gift certificate, including setting the recipient name, recipient email, amount, 
+* Buy a gift certificate, including setting the recipient name, recipient email, amount, recipient message
 * Send the gift certificate by email to the recipient
 * Check a gift certificate balance
 * Use a gift certificate as a payment method
