@@ -21,7 +21,7 @@ This plugin enhances the app_storefront_base cartridge by providing gift certifi
 
 ## Demonstration
 
-Recorded demonstration: [Demo Video](https://org62.my.salesforce.com/sfc/p/000000000062/a/0M000000O8U5/pTdgqFRPktlWLc5Owa53sG7P.5dU1GKcJN6kfAEg80k)
+Recorded demonstration: [Demo Video](https://org62.my.salesforce.com/sfc/p/000000000062/a/0M000000O8UP/0BntP9ieIY7Fpf2ugXTKnK4Mn.an.d5WSCBO1Bc_W0k)
 
 ## Requirements
 
