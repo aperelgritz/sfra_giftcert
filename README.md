@@ -51,12 +51,20 @@ sfra_giftcert:app_storefront_base
 ###### Create the gift certificate payment method and payment processor
 
 In Business Manager:
-* Go to Merchant Tools/Ordering/Payment Processors
+* Go to Merchant Tools > Ordering > Payment Processors
 * Create a payment processor with ID: BASIC_GIFT_CERTIFICATE
-* Go to Merchant Tools/Ordering/Payment Methods
+* Go to Merchant Tools > Ordering > Payment Methods
 * Create and enable a payment method with ID: GIFT_CERTIFICATE
 * Select the payment processor BASIC_GIFT_CERTIFICATE
 
+###### Link to the gift certificate landing page
 
+In Business Manager:
+* Go to Merchant Tools > Content > Content Assets
+* Open content-support
+* Add/Edit the following line
+```
+<li><a href="$httpsUrl('GiftCertificate-Landing')$" title="Go to Gift Certificates">Gift Certificates</a></li>
+```
 
 
