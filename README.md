@@ -30,25 +30,41 @@ Tested with app_storefront_base version 4.2.1
 
 ## Installation
 
-###### Compile Client-Side JS
+#### Set base path
+
+Edit package.json and set the `base` property of the `paths` object to point to a standard app_storefront_base cartridge, eg.
+
+```
+  "paths": {
+    "base": "/Users/user1/projects/project1/storefront-reference-architecture/cartridges/app_storefront_base"
+  }
+```
+
+#### Install dependencies
+
+```
+npm install
+```
+
+#### Compile Client-Side JS
 
 ```
 npm run compile:js
 ```
 
-###### Upload the cartridge to your instance
+#### Upload the cartridge to your instance
 
 ```
 npm run uploadCartridge
 ```
 
-###### Add the cartridge to your cartridge path
+#### Add the cartridge to your cartridge path
 
 ```
 sfra_giftcert:app_storefront_base
 ```
 
-###### Create the gift certificate payment method and payment processor
+#### Create the gift certificate payment method and payment processor
 
 In Business Manager:
 * Go to Merchant Tools > Ordering > Payment Processors
@@ -57,7 +73,7 @@ In Business Manager:
 * Create and enable a payment method with ID: GIFT_CERTIFICATE
 * Select the payment processor BASIC_GIFT_CERTIFICATE
 
-###### Link to the gift certificate landing page
+#### Link to the gift certificate landing page
 
 In Business Manager:
 * Go to Merchant Tools > Content > Content Assets
